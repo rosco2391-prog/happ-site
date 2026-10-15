@@ -193,7 +193,7 @@ h1 {
 .hero-subtitle {
     color: var(--text-muted);
     font-size: 1.1rem;
-    max-width: 560px;
+    max-width: 620px;
     margin: 0 auto 44px;
 }
 
@@ -286,53 +286,96 @@ h1 {
     color: var(--text-dim);
 }
 
-.sort-buttons {
-    display: flex;
-    gap: 6px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-sm);
-    padding: 4px;
-    backdrop-filter: blur(10px);
-}
-
-.sort-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-muted);
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-family: inherit;
-    font-weight: 500;
-    transition: all var(--transition);
-}
-
-.sort-btn:hover {
-    color: var(--text);
-}
-
-.sort-btn.active {
-    background: linear-gradient(120deg, var(--accent), var(--accent-2));
-    color: #04121a;
-    font-weight: 600;
-}
-
-/* ============ СЕТКА КАРТОЧЕК ============ */
+/* ============ КАРТОЧКА «ВСЕ СЕРВЕРЫ» ============ */
 .configs-grid {
+    display: block;
+}
+
+.all-sub-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(120deg, rgba(52, 211, 153, 0.15), rgba(6, 182, 212, 0.15));
+    border: 1px solid var(--card-hover-border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(14px);
+    position: relative;
+    overflow: hidden;
+    animation: cardIn 0.4s ease forwards;
+}
+
+.all-sub-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+    opacity: 0;
+    transition: opacity var(--transition);
+    pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    padding: 2px;
+    border-radius: var(--radius);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.all-sub-card:hover::before {
+    opacity: 1;
+}
+
+.all-sub-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.all-sub-icon {
+    font-size: 2.4rem;
+    line-height: 1;
+    filter: drop-shadow(0 0 12px var(--accent-glow));
+}
+
+.all-sub-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.all-sub-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.all-sub-card .copy-btn {
+    width: auto;
+    padding: 13px 24px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* ============ СЕТКА СТРАН ============ */
+.countries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 16px;
 }
 
-.config-card {
+.country-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
     padding: 20px;
     backdrop-filter: blur(14px);
     transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     position: relative;
     overflow: hidden;
     opacity: 0;
@@ -344,7 +387,7 @@ h1 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.config-card::before {
+.country-card::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -360,135 +403,53 @@ h1 {
     mask-composite: exclude;
 }
 
-.config-card:hover {
+.country-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
 }
 
-.config-card:hover::before {
+.country-card:hover::before {
     opacity: 1;
 }
 
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 14px;
-}
-
-.country-block {
+.country-card-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
 }
 
-.flag {
-    font-size: 1.6rem;
+.country-card-flag {
+    font-size: 2.2rem;
     line-height: 1;
 }
 
-.country-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.country-name {
+.country-card-name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.05rem;
     letter-spacing: -0.01em;
 }
 
-.city-name {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-}
-
-.ping-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.ping-good {
-    background: rgba(52, 211, 153, 0.15);
-    color: var(--accent);
-    border: 1px solid rgba(52, 211, 153, 0.3);
-}
-
-.ping-mid {
-    background: rgba(251, 191, 36, 0.15);
-    color: var(--warn);
-    border: 1px solid rgba(251, 191, 36, 0.3);
-}
-
-.ping-slow {
-    background: rgba(248, 113, 113, 0.15);
-    color: var(--danger);
-    border: 1px solid rgba(248, 113, 113, 0.3);
-}
-
-.ping-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: currentColor;
-    box-shadow: 0 0 8px currentColor;
-}
-
-.protocol-tag {
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 6px;
-    background: rgba(148, 163, 184, 0.15);
+.country-card-count {
+    font-size: 0.82rem;
     color: var(--text-muted);
-    margin-bottom: 12px;
+    margin-top: 3px;
 }
 
-.uri-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-sm);
-    padding: 10px 12px;
-    font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    margin-bottom: 14px;
-    overflow: hidden;
-}
-
-[data-theme="light"] .uri-box {
-    background: rgba(15, 23, 42, 0.05);
-}
-
-.uri-text {
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.copy-btn {
+.country-card .copy-btn {
     width: 100%;
     padding: 11px;
+    font-size: 0.88rem;
+    margin-top: auto;
+}
+
+/* ============ КНОПКА «СКОПИРОВАТЬ» ============ */
+.copy-btn {
     border-radius: var(--radius-sm);
     border: none;
     background: linear-gradient(120deg, var(--accent), var(--accent-2));
     color: #04121a;
     font-weight: 600;
     font-family: inherit;
-    font-size: 0.9rem;
     cursor: pointer;
     transition: all var(--transition);
     display: flex;
@@ -511,9 +472,65 @@ h1 {
     color: #04121a;
 }
 
+/* ============ ИНСТРУКЦИЯ ============ */
+.how-to {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(14px);
+}
+
+.how-to h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.how-to-steps {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    counter-reset: step;
+}
+
+.how-to-steps li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.step-num {
+    flex-shrink: 0;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+    color: #04121a;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.step-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+}
+
+.step-desc {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
 /* ============ ЗАГРУЗЧИК ============ */
 .loader {
-    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,7 +552,6 @@ h1 {
 }
 
 .empty-state {
-    grid-column: 1 / -1;
     text-align: center;
     padding: 80px 20px;
     color: var(--text-muted);
@@ -569,7 +585,14 @@ h1 {
     .stat { padding: 16px 20px; min-width: 100px; }
     .stat-value { font-size: 1.4rem; }
     .controls { flex-direction: column; align-items: stretch; }
-    .configs-grid { grid-template-columns: 1fr; }
+    .countries-grid { grid-template-columns: 1fr; }
+    .all-sub-card { padding: 20px; }
+    .all-sub-card .copy-btn { width: 100%; }
+    .all-sub-left { gap: 12px; }
+    .all-sub-icon { font-size: 2rem; }
+    .all-sub-title { font-size: 1.1rem; }
+    .how-to { padding: 24px 20px; }
+    .how-to-steps { grid-template-columns: 1fr; }
 }
 
 /* ============ СКРОЛЛБАР ============ */
