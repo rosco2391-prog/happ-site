@@ -1,7 +1,7 @@
 // ============ КОНФИГУРАЦИЯ ============
 const CONFIG_URL = 'configs.json';
 let ALL_SERVERS = [];
-let CURRENT_SORT = 'ping';
+let CURRENT_SORT = 'speed';
 let CURRENT_SEARCH = '';
 
 // ============ ЭМОДЗИ ФЛАГОВ ПО КОДУ СТРАНЫ ============
@@ -14,11 +14,14 @@ function getFlagEmoji(countryCode) {
     return String.fromCodePoint(...codePoints);
 }
 
-// ============ ОПРЕДЕЛЕНИЕ ЦВЕТА ПИНГА ============
-function getPingClass(ping) {
-    if (ping < 150) return 'ping-good';
-    if (ping < 350) return 'ping-mid';
-    return 'ping-slow';
+// ============ КАТЕГОРИЯ СКОРОСТИ ============
+// ping_ms — относительная метрика PAVE (меньше = быстрее),
+// поэтому показываем категорию, а не «мс»
+function getSpeedCategory(value) {
+    const v = value || 999;
+    if (v < 10) return { label: 'Быстрый', class: 'ping-good', order: 1 };
+    if (v < 17) return { label: 'Средний', class: 'ping-mid', order: 2 };
+    return { label: 'Медленный', class: 'ping-slow', order: 3 };
 }
 
 // ============ ЭКРАНИРОВАНИЕ HTML ============
@@ -37,18 +40,16 @@ async function loadConfigs() {
 
         ALL_SERVERS = data.servers || [];
 
-        // Обновляем статистику
+        // Статистика
         const countries = new Set(ALL_SERVERS.map(s => s.country).filter(Boolean));
         document.getElementById('total-servers').textContent = ALL_SERVERS.length;
         document.getElementById('total-countries').textContent = countries.size;
 
-        if (ALL_SERVERS.length > 0) {
-            const avg = Math.round(
-                ALL_SERVERS.reduce((sum, s) => sum + (s.ping_ms || 0), 0) / ALL_SERVERS.length
-            );
-            document.getElementById('avg-ping').textContent = avg + ' мс';
-        } else {
-            document.getElementById('avg-ping').textContent = '—';
+        // Третья плитка — количество «быстрых» серверов
+        const fastCount = ALL_SERVERS.filter(s => (s.ping_ms || 999) < 10).length;
+        const thirdStat = document.getElementById('avg-ping');
+        if (thirdStat) {
+            thirdStat.textContent = fastCount;
         }
 
         renderServers();
@@ -79,7 +80,7 @@ function renderServers() {
     }
 
     // Сортировка
-    if (CURRENT_SORT === 'ping') {
+    if (CURRENT_SORT === 'speed') {
         filtered = [...filtered].sort((a, b) => (a.ping_ms || 9999) - (b.ping_ms || 9999));
     } else if (CURRENT_SORT === 'country') {
         filtered = [...filtered].sort((a, b) =>
@@ -97,12 +98,11 @@ function renderServers() {
         return;
     }
 
-    // Ограничиваем вывод 100 карточками для производительности
     const toRender = filtered.slice(0, 100);
 
     container.innerHTML = toRender.map((s, i) => {
         const flag = getFlagEmoji(s.country_code);
-        const pingClass = getPingClass(s.ping_ms || 9999);
+        const speed = getSpeedCategory(s.ping_ms);
         const country = escapeHtml(s.country || 'Неизвестно');
         const city = escapeHtml(s.city || '');
         const protocol = escapeHtml((s.protocol || 'unknown').toUpperCase());
@@ -119,9 +119,9 @@ function renderServers() {
                             ${city ? `<span class="city-name">${city}</span>` : ''}
                         </div>
                     </div>
-                    <span class="ping-badge ${pingClass}">
+                    <span class="ping-badge ${speed.class}">
                         <span class="ping-dot"></span>
-                        ${s.ping_ms || '?'} мс
+                        ${speed.label}
                     </span>
                 </div>
                 <span class="protocol-tag">${protocol}</span>
@@ -139,7 +139,7 @@ function renderServers() {
         `;
     }).join('');
 
-    // Навешиваем обработчики на кнопки
+    // Обработчики на кнопки «Скопировать»
     container.querySelectorAll('.copy-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const id = btn.dataset.copy;
