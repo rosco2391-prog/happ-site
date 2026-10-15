@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приватный доступ — бесплатные серверы</title>
+    <title>Приватный доступ — подписки по странам</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,11 +42,11 @@
                 Обновляется автоматически
             </div>
             <h1>
-                Бесплатные серверы Happ<br>
+                Готовые подписки<br>
                 <span class="gradient-text">для приватного доступа</span>
             </h1>
             <p class="hero-subtitle">
-                Свежие конфигурации, отсортированные по странам и скорости. Обновление каждые 6 часов.
+                Скопируйте ссылку и вставьте её в Happ — все серверы добавятся автоматически. Обновление каждые 6 часов.
             </p>
 
             <div class="stats">
@@ -60,13 +60,13 @@
                 </div>
                 <div class="stat">
                     <div class="stat-value" id="avg-ping">—</div>
-                    <div class="stat-label">Средний пинг</div>
+                    <div class="stat-label">Быстрых</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Фильтры -->
+    <!-- Основной контент -->
     <main class="container">
         <div class="controls">
             <div class="search-box">
@@ -74,24 +74,48 @@
                     <circle cx="11" cy="11" r="8"/>
                     <path d="m21 21-4.35-4.35"/>
                 </svg>
-                <input type="text" id="search" placeholder="Поиск по стране или протоколу...">
-            </div>
-            <div class="sort-buttons">
-                <button class="sort-btn active" data-sort="ping">По скорости</button>
-                <button class="sort-btn" data-sort="country">По стране</button>
+                <input type="text" id="search" placeholder="Поиск страны...">
             </div>
         </div>
 
         <section id="configs-list" class="configs-grid">
             <div class="loader">
                 <div class="spinner"></div>
-                <p>Загружаем серверы...</p>
+                <p>Загружаем подписки...</p>
             </div>
+        </section>
+
+        <!-- Инструкция -->
+        <section class="how-to">
+            <h2>Как добавить подписку в Happ</h2>
+            <ol class="how-to-steps">
+                <li>
+                    <span class="step-num">1</span>
+                    <div>
+                        <div class="step-title">Скопируйте ссылку</div>
+                        <div class="step-desc">Нажмите «Скопировать ссылку» на карточке нужной страны или на общей карточке «Все серверы».</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">2</span>
+                    <div>
+                        <div class="step-title">Откройте Happ</div>
+                        <div class="step-desc">В приложении нажмите «+» в правом верхнем углу → «Добавить из буфера обмена».</div>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">3</span>
+                    <div>
+                        <div class="step-title">Готово</div>
+                        <div class="step-desc">Happ сам скачает все серверы и будет обновлять их автоматически. Выберите любой и подключайтесь.</div>
+                    </div>
+                </li>
+            </ol>
         </section>
     </main>
 
     <footer class="footer">
-        <p>Серверы обновляются автоматически каждые 6 часов.</p>
+        <p>Подписки обновляются автоматически каждые 6 часов.</p>
         <p class="footer-note">Используйте на свой страх и риск. Проверяйте конфигурации самостоятельно.</p>
     </footer>
 
