@@ -1,151 +1,124 @@
 // ============ КОНФИГУРАЦИЯ ============
 const CONFIG_URL = 'configs.json';
-let ALL_SERVERS = [];
-let CURRENT_SORT = 'speed';
-let CURRENT_SEARCH = '';
-
-// ============ ЭМОДЗИ ФЛАГОВ ПО КОДУ СТРАНЫ ============
-function getFlagEmoji(countryCode) {
-    if (!countryCode || countryCode.length !== 2) return '🌐';
-    const codePoints = countryCode
-        .toUpperCase()
-        .split('')
-        .map(c => 127397 + c.charCodeAt(0));
-    return String.fromCodePoint(...codePoints);
-}
-
-// ============ КАТЕГОРИЯ СКОРОСТИ ============
-// ping_ms — относительная метрика PAVE (меньше = быстрее),
-// поэтому показываем категорию, а не «мс»
-function getSpeedCategory(value) {
-    const v = value || 999;
-    if (v < 10) return { label: 'Быстрый', class: 'ping-good', order: 1 };
-    if (v < 17) return { label: 'Средний', class: 'ping-mid', order: 2 };
-    return { label: 'Медленный', class: 'ping-slow', order: 3 };
-}
+let ALL_DATA = null;
 
 // ============ ЭКРАНИРОВАНИЕ HTML ============
 function escapeHtml(text) {
     const div = document.createElement('div');
-    div.textContent = text;
+    div.textContent = text == null ? '' : String(text);
     return div.innerHTML;
 }
 
-// ============ ЗАГРУЗКА ДАННЫХ ============
+// ============ АБСОЛЮТНЫЙ URL ============
+function absUrl(path) {
+    return new URL(path, window.location.href).href;
+}
+
+// ============ ЗАГРУЗКА ============
 async function loadConfigs() {
     try {
-        const response = await fetch(CONFIG_URL);
-        if (!response.ok) throw new Error('Не удалось загрузить файл');
-        const data = await response.json();
+        const res = await fetch(CONFIG_URL);
+        if (!res.ok) throw new Error('Не удалось загрузить configs.json');
+        ALL_DATA = await res.json();
 
-        ALL_SERVERS = data.servers || [];
+        // Статистика сверху
+        document.getElementById('total-servers').textContent = ALL_DATA.total || 0;
+        document.getElementById('total-countries').textContent = ALL_DATA.countries_total || 0;
+        document.getElementById('total-lists').textContent = (ALL_DATA.lists || []).length;
 
-        // Статистика
-        const countries = new Set(ALL_SERVERS.map(s => s.country).filter(Boolean));
-        document.getElementById('total-servers').textContent = ALL_SERVERS.length;
-        document.getElementById('total-countries').textContent = countries.size;
-
-        // Третья плитка — количество «быстрых» серверов
-        const fastCount = ALL_SERVERS.filter(s => (s.ping_ms || 999) < 10).length;
-        const thirdStat = document.getElementById('avg-ping');
-        if (thirdStat) {
-            thirdStat.textContent = fastCount;
-        }
-
-        renderServers();
+        renderLists();
     } catch (err) {
         console.error(err);
         document.getElementById('configs-list').innerHTML = `
             <div class="empty-state">
-                <h3>Не удалось загрузить серверы</h3>
+                <h3>Не удалось загрузить данные</h3>
                 <p>Попробуйте обновить страницу позже.</p>
             </div>
         `;
     }
 }
 
-// ============ ОТРИСОВКА КАРТОЧЕК ============
-function renderServers() {
+// ============ ОТРИСОВКА СПИСКОВ ============
+function renderLists() {
     const container = document.getElementById('configs-list');
+    if (!ALL_DATA) return;
 
-    // Фильтрация по поиску
-    let filtered = ALL_SERVERS;
-    if (CURRENT_SEARCH) {
-        const q = CURRENT_SEARCH.toLowerCase();
-        filtered = filtered.filter(s =>
-            (s.country || '').toLowerCase().includes(q) ||
-            (s.protocol || '').toLowerCase().includes(q) ||
-            (s.city || '').toLowerCase().includes(q)
-        );
+    const cards = [];
+
+    // 1) Общая карточка «Все серверы»
+    if (ALL_DATA.all) {
+        const all = ALL_DATA.all;
+        const allUrl = absUrl(all.sub_url);
+        cards.push(`
+            <div class="list-card featured" style="animation-delay: 0s">
+                <div class="list-info">
+                    <div class="list-header">
+                        <span class="list-icon">🌍</span>
+                        <span class="list-title">Все серверы</span>
+                    </div>
+                    <div class="list-stats">
+                        <span>📡 <strong>${all.count}</strong> серверов</span>
+                        <span>🌐 <strong>${all.countries_count}</strong> стран</span>
+                        <span>⚡ средняя <strong>${all.avg_ping}</strong></span>
+                    </div>
+                    <div class="list-top">Одна ссылка — все серверы сразу</div>
+                </div>
+                <button class="copy-btn copy-sub" data-url="${escapeHtml(allUrl)}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Скопировать ссылку
+                </button>
+            </div>
+        `);
     }
 
-    // Сортировка
-    if (CURRENT_SORT === 'speed') {
-        filtered = [...filtered].sort((a, b) => (a.ping_ms || 9999) - (b.ping_ms || 9999));
-    } else if (CURRENT_SORT === 'country') {
-        filtered = [...filtered].sort((a, b) =>
-            (a.country || '').localeCompare(b.country || '', 'ru')
-        );
-    }
+    // 2) Карточки списков по 60 серверов
+    (ALL_DATA.lists || []).forEach((lst, i) => {
+        const url = absUrl(lst.sub_url);
+        const top = (lst.top_countries || []).join(' · ');
 
-    if (filtered.length === 0) {
+        cards.push(`
+            <div class="list-card" style="animation-delay: ${(i + 1) * 0.05}s">
+                <div class="list-info">
+                    <div class="list-header">
+                        <span class="list-icon">📦</span>
+                        <span class="list-title">${escapeHtml(lst.title)}</span>
+                    </div>
+                    <div class="list-stats">
+                        <span>📡 <strong>${lst.count}</strong> серверов</span>
+                        <span>🌐 <strong>${lst.countries_count}</strong> стран</span>
+                        <span>⚡ <strong>${lst.min_ping}–${lst.max_ping}</strong></span>
+                    </div>
+                    <div class="list-top"><strong>Топ:</strong> ${escapeHtml(top)}</div>
+                </div>
+                <button class="copy-btn copy-sub" data-url="${escapeHtml(url)}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+                    Скопировать ссылку
+                </button>
+            </div>
+        `);
+    });
+
+    if (cards.length === 0) {
         container.innerHTML = `
             <div class="empty-state">
-                <h3>Ничего не найдено</h3>
-                <p>Попробуйте изменить параметры поиска.</p>
+                <h3>Пока нет списков</h3>
+                <p>Данные появятся после следующего обновления.</p>
             </div>
         `;
         return;
     }
 
-    const toRender = filtered.slice(0, 100);
+    container.innerHTML = cards.join('');
 
-    container.innerHTML = toRender.map((s, i) => {
-        const flag = getFlagEmoji(s.country_code);
-        const speed = getSpeedCategory(s.ping_ms);
-        const country = escapeHtml(s.country || 'Неизвестно');
-        const city = escapeHtml(s.city || '');
-        const protocol = escapeHtml((s.protocol || 'unknown').toUpperCase());
-        const uri = escapeHtml(s.uri || '');
-        const id = `uri-${i}`;
-
-        return `
-            <div class="config-card" style="animation-delay: ${i * 0.02}s">
-                <div class="card-header">
-                    <div class="country-block">
-                        <span class="flag">${flag}</span>
-                        <div class="country-info">
-                            <span class="country-name">${country}</span>
-                            ${city ? `<span class="city-name">${city}</span>` : ''}
-                        </div>
-                    </div>
-                    <span class="ping-badge ${speed.class}">
-                        <span class="ping-dot"></span>
-                        ${speed.label}
-                    </span>
-                </div>
-                <span class="protocol-tag">${protocol}</span>
-                <div class="uri-box">
-                    <span class="uri-text" id="${id}" title="${uri}">${uri}</span>
-                </div>
-                <button class="copy-btn" data-copy="${id}">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                    </svg>
-                    Скопировать
-                </button>
-            </div>
-        `;
-    }).join('');
-
-    // Обработчики на кнопки «Скопировать»
-    container.querySelectorAll('.copy-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const id = btn.dataset.copy;
-            const text = document.getElementById(id).textContent;
-            copyToClipboard(text, btn);
-        });
+    // Обработчики кнопок
+    container.querySelectorAll('.copy-sub').forEach(btn => {
+        btn.addEventListener('click', () => copyToClipboard(btn.dataset.url, btn));
     });
 }
 
@@ -153,7 +126,6 @@ function renderServers() {
 async function copyToClipboard(text, button) {
     try {
         await navigator.clipboard.writeText(text);
-
         const original = button.innerHTML;
         button.classList.add('copied');
         button.innerHTML = `
@@ -162,31 +134,14 @@ async function copyToClipboard(text, button) {
             </svg>
             Скопировано
         `;
-
         setTimeout(() => {
             button.classList.remove('copied');
             button.innerHTML = original;
         }, 1800);
     } catch (err) {
-        alert('Не удалось скопировать. Выделите текст вручную.');
+        alert('Не удалось скопировать. Скопируйте вручную:\n\n' + text);
     }
 }
-
-// ============ ПОИСК ============
-document.getElementById('search').addEventListener('input', (e) => {
-    CURRENT_SEARCH = e.target.value.trim();
-    renderServers();
-});
-
-// ============ СОРТИРОВКА ============
-document.querySelectorAll('.sort-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        CURRENT_SORT = btn.dataset.sort;
-        renderServers();
-    });
-});
 
 // ============ ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ ============
 const themeToggle = document.getElementById('theme-toggle');
