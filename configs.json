@@ -1,98 +1,146 @@
 {
-  "updated": "16.10.2026 18:06",
-  "total": 219,
-  "countries_total": 23,
+  "updated": "17.10.2026 00:06",
+  "total": 287,
+  "countries_total": 31,
   "all_sub_url": "subs/all.txt",
   "countries": [
     {
       "code": "NL",
       "name": "The Netherlands",
-      "count": 78,
+      "count": 88,
       "sub_url": "subs/nl.txt"
     },
     {
       "code": "US",
       "name": "United States",
-      "count": 30,
+      "count": 38,
       "sub_url": "subs/us.txt"
     },
     {
       "code": "DE",
       "name": "Germany",
-      "count": 21,
+      "count": 36,
       "sub_url": "subs/de.txt"
-    },
-    {
-      "code": "JP",
-      "name": "Japan",
-      "count": 13,
-      "sub_url": "subs/jp.txt"
-    },
-    {
-      "code": "GB",
-      "name": "United Kingdom",
-      "count": 11,
-      "sub_url": "subs/gb.txt"
-    },
-    {
-      "code": "SG",
-      "name": "Singapore",
-      "count": 8,
-      "sub_url": "subs/sg.txt"
     },
     {
       "code": "FR",
       "name": "France",
-      "count": 7,
+      "count": 17,
       "sub_url": "subs/fr.txt"
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "count": 7,
-      "sub_url": "subs/ca.txt"
-    },
-    {
-      "code": "BR",
-      "name": "Brazil",
-      "count": 6,
-      "sub_url": "subs/br.txt"
     },
     {
       "code": "PL",
       "name": "Poland",
-      "count": 6,
+      "count": 9,
       "sub_url": "subs/pl.txt"
     },
     {
-      "code": "TR",
-      "name": "Türkiye",
-      "count": 5,
-      "sub_url": "subs/tr.txt"
+      "code": "GB",
+      "name": "United Kingdom",
+      "count": 8,
+      "sub_url": "subs/gb.txt"
     },
     {
-      "code": "TH",
-      "name": "Thailand",
-      "count": 5,
-      "sub_url": "subs/th.txt"
+      "code": "CA",
+      "name": "Canada",
+      "count": 8,
+      "sub_url": "subs/ca.txt"
     },
     {
-      "code": "BY",
-      "name": "Belarus",
-      "count": 3,
-      "sub_url": "subs/by.txt"
+      "code": "JP",
+      "name": "Japan",
+      "count": 7,
+      "sub_url": "subs/jp.txt"
     },
     {
-      "code": "RU",
-      "name": "Russia",
-      "count": 3,
-      "sub_url": "subs/ru.txt"
+      "code": "IN",
+      "name": "India",
+      "count": 7,
+      "sub_url": "subs/in.txt"
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "count": 6,
+      "sub_url": "subs/lv.txt"
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "count": 6,
+      "sub_url": "subs/ro.txt"
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "count": 4,
+      "sub_url": "subs/sg.txt"
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "count": 4,
+      "sub_url": "subs/fi.txt"
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "count": 4,
+      "sub_url": "subs/hk.txt"
     },
     {
       "code": "KR",
       "name": "South Korea",
-      "count": 3,
+      "count": 4,
       "sub_url": "subs/kr.txt"
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "count": 4,
+      "sub_url": "subs/ru.txt"
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "count": 4,
+      "sub_url": "subs/bg.txt"
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "count": 3,
+      "sub_url": "subs/se.txt"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "count": 3,
+      "sub_url": "subs/ch.txt"
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "count": 3,
+      "sub_url": "subs/vn.txt"
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "count": 3,
+      "sub_url": "subs/th.txt"
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "count": 3,
+      "sub_url": "subs/rs.txt"
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "count": 3,
+      "sub_url": "subs/md.txt"
     },
     {
       "code": "KZ",
@@ -101,208 +149,208 @@
       "sub_url": "subs/kz.txt"
     },
     {
+      "code": "BY",
+      "name": "Belarus",
+      "count": 2,
+      "sub_url": "subs/by.txt"
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "count": 2,
+      "sub_url": "subs/es.txt"
+    },
+    {
       "code": "IT",
       "name": "Italy",
       "count": 2,
       "sub_url": "subs/it.txt"
     },
     {
-      "code": "SE",
-      "name": "Sweden",
+      "code": "ZA",
+      "name": "South Africa",
       "count": 2,
-      "sub_url": "subs/se.txt"
+      "sub_url": "subs/za.txt"
     },
     {
-      "code": "FI",
-      "name": "Finland",
+      "code": "AE",
+      "name": "United Arab Emirates",
       "count": 2,
-      "sub_url": "subs/fi.txt"
+      "sub_url": "subs/ae.txt"
     },
     {
-      "code": "HK",
-      "name": "Hong Kong",
+      "code": "IE",
+      "name": "Ireland",
       "count": 1,
-      "sub_url": "subs/hk.txt"
+      "sub_url": "subs/ie.txt"
     },
     {
-      "code": "LV",
-      "name": "Latvia",
+      "code": "TW",
+      "name": "Taiwan",
       "count": 1,
-      "sub_url": "subs/lv.txt"
-    },
-    {
-      "code": "NO",
-      "name": "Norway",
-      "count": 1,
-      "sub_url": "subs/no.txt"
-    },
-    {
-      "code": "MY",
-      "name": "Malaysia",
-      "count": 1,
-      "sub_url": "subs/my.txt"
+      "sub_url": "subs/tw.txt"
     }
   ],
   "servers": [
     {
-      "uri": "vmess://eyJhZGQiOiJvci41MjExNjYueHl6IiwiYWlkIjoiMCIsImlkIjoiYWMyNTEyMzctNTc2Zi00MGM4LWE1NDMtNTU0OTYwYzk1OGIxIiwibmV0Ijoid3MiLCJwYXRoIjoiL29yMyIsInBvcnQiOiIyMDgzIiwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOIFx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSIsInNjeSI6ImF1dG8iLCJzbmkiOiJvci41MjExNjYueHl6IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0=",
-      "protocol": "vmess",
-      "country": "United States",
-      "country_code": "US",
-      "city": "Durham",
-      "ping_ms": 2.0
+      "uri": "vless://80de563a-cac8-40ea-8cb0-4cb082dd92f9@5.178.109.174:14430?&sni=5.178.109.174&type=ws&headerType=none&host=5.178.109.174&path=/vless#🇸🇪 Join+Telegram:@Farah_VPN 🇸🇪",
+      "protocol": "vless",
+      "country": "Sweden",
+      "country_code": "SE",
+      "city": "Stockholm",
+      "ping_ms": 0.7
     },
     {
-      "uri": "vmess://eyJhZGQiOiAibWNpLm1vc2kubW9zaXByby5tbCIsICJhaWQiOiAiMCIsICJob3N0IjogIkR1c3NlbGRvcmYua290aWNrLnNpdGUiLCAiaWQiOiAiM2YxOTcyODAtN2IyMS00ZjM5LWI3NjMtNGJiMDA0ZTgwMjFmIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9zcGVlZHRlc3QiLCAicG9ydCI6ICI0NDMiLCAic2N5IjogImF1dG8iLCAic25pIjogIkR1c3NlbGRvcmYua290aWNrLnNpdGUiLCAidGxzIjogInRscyIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAicHMiOiAiQEhvcGVfTmV0LWpvaW4tdXMtb24tVGVsZWdyYW0ifQ==",
-      "protocol": "vmess",
-      "country": "United States",
-      "country_code": "US",
-      "city": "Miami",
-      "ping_ms": 3.9
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@nl1.levikogjgfdd.ir:8388#🇳🇱139753 | ⚡️Telegram = t.me/SOSkeyNET",
-      "protocol": "ss",
-      "country": "Türkiye",
-      "country_code": "TR",
-      "city": "Istanbul",
-      "ping_ms": 4.8
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.212:8080#@ICV2RAY",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 6.4
-    },
-    {
-      "uri": "vmess://eyJ2IjoiMiIsInBzIjoiQ0Eg8J+HqPCfh6YgfCBAUmF5ZGlrYWx4IHwgRTFDNkNGIiwiYWRkIjoiMTA0LjE5LjU5Ljg5IiwicG9ydCI6IjIwODYiLCJ0eXBlIjoibm9uZSIsImlkIjoiZTllM2NjMTMtZGI0OC00Y2MxLThjMjQtNzYyNjQzOWE1MzM5IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6ImdpdGh1Yi5jb20vQWx2aW45OTk5IiwiaG9zdCI6ImlwMTQuZnJlZWdyYWRlbHkueHl6IiwidGxzIjoiIn0=",
-      "protocol": "vmess",
-      "country": "United States",
-      "country_code": "US",
-      "city": "Dallas",
-      "ping_ms": 6.8
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQakZwaTNPTHpkV2hDMC9WZzhPVzhUeUxmdThFbDZSM3NsQTdMRzAzaVU4PQ@n1.cover20.ir:38760?#@v2ray_configs_pools 🇮🇷 ⚡️",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 6.9
-    },
-    {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206NGp1Nm5HQ2RSL3g5dEZOODVJbWVWZz09OkM3RDhnUUlnTnRpKytDTUtnZjVuOHc9PQ@172.232.217.212:53826#@FarazV2ray",
-      "protocol": "ss",
-      "country": "Germany",
-      "country_code": "DE",
-      "city": "Falkenstein",
-      "ping_ms": 7.1
-    },
-    {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206MUp2bG10VDR2OHkxeUdjekR0VDZXdz09OkRldU8zRXNYTmtkVWlWVkNTOG5VMlE9PQ==@95.38.68.152:2089#@meliproxyy",
-      "protocol": "ss",
-      "country": "France",
-      "country_code": "FR",
-      "city": "Paris",
-      "ping_ms": 7.5
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.82:8080#🇳🇱 Join+Telegram:@Farah_VPN 🇳🇱",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 7.5
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#🇳🇱 Join+Telegram:@Farah_VPN 🇳🇱",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 7.5
-    },
-    {
-      "uri": "vless://564082ff-cf3c-48db-9e10-8ad2312847b4@soskeynets.mxvpn.dev:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw&security=reality&sid=bbc68cec8bb8d2e3&sni=node17.mxvpn.dev&type=tcp#🇳🇱139849 | ⚡️Telegram = t.me/SOSkeyNET",
+      "uri": "vless://7d2bac5e-6ff9-45c9-844e-6bfc5a384a42@yt.orpheous.ru:443?security=reality&encryption=none&pbk=lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yt.orpheous.ru&sid=9e4eced6e98ed4d4#@EXPRESSVPN_420",
       "protocol": "vless",
       "country": "Germany",
       "country_code": "DE",
       "city": "Frankfurt am Main",
-      "ping_ms": 7.6
+      "ping_ms": 0.9
     },
     {
-      "uri": "vless://744cf0f9-9fc6-4929-8de9-34b346408558@mci.best-cloud.ir:2053?mode=auto&path=/?ed=80&security=tls&alpn=h2,http/1.1&encryption=none&extra={\"mode\":\"auto\",\"xPaddingBytes\":\"100-1000\"}&host=afshin.sudodaltoon.ir.&fp=chrome&type=xhttp&sni=afshin.sudodaltoon.ir#@v2ray_phoenix",
+      "uri": "vless://7d2bac5e-6ff9-45c9-844e-6bfc5a384a42@31.76.119.117:443?security=reality&encryption=none&pbk=lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de.orpheous.ru&sid=9e4eced6e98ed4d4#@leviconfigs🪐-7",
       "protocol": "vless",
-      "country": "Hong Kong",
-      "country_code": "HK",
-      "city": "Lau Fau Shan",
-      "ping_ms": 7.6
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Frankfurt am Main",
+      "ping_ms": 0.9
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwTEdDUG5qMldnenhYMUllZFc4eWQ3dHJ3UmxYcWpMYQ@109.122.251.86:20700#🇮🇷@tanhant",
-      "protocol": "ss",
+      "uri": "vless://814bd064-544d-4255-a070-5705c03f6da9@3.0.111.82:12972?security=reality&type=tcp&packetEncoding=xudp&sni=www.apple.com&fp=chrome&flow=xtls-rprx-vision&sid=48050fab&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0#🇸🇬 Join+Telegram:@Farah_VPN 🇸🇬",
+      "protocol": "vless",
+      "country": "Singapore",
+      "country_code": "SG",
+      "city": "Singapore",
+      "ping_ms": 1.2
+    },
+    {
+      "uri": "vless://814bd064-544d-4255-a070-5705c03f6da9@3.114.220.22:10583?security=reality&encryption=none&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=48050fab#🇮🇹 direct",
+      "protocol": "vless",
+      "country": "Japan",
+      "country_code": "JP",
+      "city": "Tokyo",
+      "ping_ms": 1.3
+    },
+    {
+      "uri": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&insecure=0&host=www.volumeroot.com&fp=edge&type=ws&allowInsecure=0&sni=www.volumeroot.com#⚡ b2n.ir/v2ray-configs | 226",
+      "protocol": "trojan",
+      "country": "The Netherlands",
+      "country_code": "NL",
+      "city": "Haarlem",
+      "ping_ms": 3.7
+    },
+    {
+      "uri": "vless://6338c01a-310e-42c3-bf4f-2a20e161054b@freede.aiage.work:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g&security=reality&sid=5f5e74dfd296b28d&sni=freede.aiage.work&type=tcp#🍂100@oneclickvpnkeys",
+      "protocol": "vless",
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Frankfurt am Main",
+      "ping_ms": 5.1
+    },
+    {
+      "uri": "vless://631ee34f-4faf-4ad7-b49d-e6f50403cf0e@89.105.197.203:443?security=reality&encryption=none&pbk=mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=anyfile2file.com&sid=64c1fe36c7846400#@v2rayng3",
+      "protocol": "vless",
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Frankfurt am Main",
+      "ping_ms": 5.3
+    },
+    {
+      "uri": "vless://63ec2a82-e47c-4782-a89e-9aca2baf17ef@188.114.97.6:443?path=/id-pusat&security=tls&encryption=none&insecure=0&host=quiz.int.vidio.com.ex33r.eu.cc&type=ws&allowInsecure=0&sni=quiz.int.vidio.com.ex33r.eu.cc#TEL;Father_vpn",
+      "protocol": "vless",
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Frankfurt am Main",
+      "ping_ms": 5.4
+    },
+    {
+      "uri": "vless://6c713691-3ca2-4446-ad25-113d1bed6b03@46.243.183.2:443?security=reality&encryption=none&pbk=lrbP-ePUk7nbeLS8vBLbP5yyld7ZLmTB4_VQWRO31T8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=stream.indigo.ru&sid=8a68df3a93c63ac8#@tootffarangi🍓-2",
+      "protocol": "vless",
+      "country": "Sweden",
+      "country_code": "SE",
+      "city": "Stockholm",
+      "ping_ms": 5.4
+    },
+    {
+      "uri": "vless://686c62d9-17a7-43c9-a40a-f6747df60a9f@chatgpt.com:2096?path=/&security=tls&alpn=http/1.1&encryption=none&host=ca.adobe-connect.top&fp=chrome&type=ws&sni=ca.adobe-connect.top#@CUSTOMVPNSERVER",
+      "protocol": "vless",
+      "country": "Finland",
+      "country_code": "FI",
+      "city": "Helsinki",
+      "ping_ms": 5.5
+    },
+    {
+      "uri": "vless://f8d52ece-fad4-478d-875d-df6eed3befa7@pl.golangwikito.cfd:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg&security=reality&sid=acccaaaa9f72147d&sni=pl.golangwikito.cfd&type=tcp#🍂75@oneclickvpnkeys",
+      "protocol": "vless",
       "country": "The Netherlands",
       "country_code": "NL",
       "city": "Amsterdam",
-      "ping_ms": 7.7
+      "ping_ms": 5.5
     },
     {
-      "uri": "vless://7327168e-4da6-4104-82ab-d52dd7128c47@104.18.33.162:2083?path=/?u=ommkkobot&security=tls&encryption=none&insecure=0&host=nova-mango-cloud-c883.nova-5dd64d.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=nova-mango-cloud-c883.nova-5dd64d.workers.dev#11",
+      "uri": "vless://6cc29a05-4828-4e48-a34a-20b7ada60e85@104.21.70.21:8080?encryption=none&host=testmikonim.hydrymhmdamyn7.workers.dev&path=/OAZko425kNFF0PpQ&sni=testmikonim.hydrymhmdamyn7.workers.dev&type=ws#🇸🇬 Join+Telegram:@Farah_VPN 🇸🇬",
       "protocol": "vless",
-      "country": "United States",
-      "country_code": "US",
-      "city": "Secaucus",
-      "ping_ms": 7.8
+      "country": "Sweden",
+      "country_code": "SE",
+      "city": "Stockholm",
+      "ping_ms": 5.6
     },
     {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206MUp2bG10VDR2OHkxeUdjekR0VDZXdz09OkRldU8zRXNYTmtkVWlWVkNTOG5VMlE9PQ==@n2.rehan-iogsar.ir:4680#@meliproxyy",
-      "protocol": "ss",
+      "uri": "vless://6c713691-3ca2-0009-ad25-113d1bed6b03@140.225.199.210:443?security=reality&encryption=none&pbk=JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=hatch.senko.ru&sid=b8c6965f3596688a#@ICV2RAY",
+      "protocol": "vless",
+      "country": "Belarus",
+      "country_code": "BY",
+      "city": "Minsk",
+      "ping_ms": 5.6
+    },
+    {
+      "uri": "vless://f8d52ece-fad4-478d-875d-df6eed3befa7@sw.golangwikito.cfd:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg&security=reality&sid=a1037b25dcef6aa7&sni=sw.golangwikito.cfd&type=tcp#🍂92@oneclickvpnkeys",
+      "protocol": "vless",
+      "country": "The Netherlands",
+      "country_code": "NL",
+      "city": "Amsterdam",
+      "ping_ms": 5.6
+    },
+    {
+      "uri": "vless://72d334af-a4e9-ed8f-cbec-75317ce0b463@122.8.44.9:443?path=/&security=reality&encryption=none&pbk=D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs&fp=chrome&type=xhttp&sni=download.nvidia.com#@Shh_Proxy-New⁸",
+      "protocol": "vless",
+      "country": "India",
+      "country_code": "IN",
+      "city": "Mumbai",
+      "ping_ms": 6.1
+    },
+    {
+      "uri": "vless://72ea5a91-ffcc-43d2-9297-5993c3abf186@148.113.5.44:443?security=reality&encryption=none&pbk=QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=221873918e0bb74d#@hopev2ray🤍",
+      "protocol": "vless",
+      "country": "India",
+      "country_code": "IN",
+      "city": "Mumbai",
+      "ping_ms": 6.2
+    },
+    {
+      "uri": "vless://729dd5f2-f5ff-4070-8c10-863eceded0b1@195.123.235.177:443?security=reality&encryption=none&pbk=5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=gateway.icloud.com&sid=c85d029f5e8eb393#@i10VPN⁸",
+      "protocol": "vless",
+      "country": "India",
+      "country_code": "IN",
+      "city": "Mumbai",
+      "ping_ms": 6.3
+    },
+    {
+      "uri": "vless://probabblynot-ch@155.212.240.147:2087?alpn=http/1.1&encryption=none&fp=chrome&host=probabblynot.fazelextremeisreal.com&path=/@probabblynot&security=tls&sni=probabblynot.fazelextremeisreal.com&type=ws#@probabblynot-mci4",
+      "protocol": "vless",
       "country": "France",
       "country_code": "FR",
-      "city": "Paris",
-      "ping_ms": 7.9
+      "city": "Gravelines",
+      "ping_ms": 6.4
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#🇳🇱 Join+Telegram:@Farah_VPN 🇳🇱",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 7.9
-    },
-    {
-      "uri": "ss://YWVzLTEyOC1nY206NTY4MDZlMWY1MThiMTYxOTUwZGQxOWY1OTYwYWFmYmU@167.160.90.106:10689#@Shh_Proxy-New⁸",
-      "protocol": "ss",
-      "country": "Canada",
-      "country_code": "CA",
-      "city": "Pointe-Claire",
-      "ping_ms": 7.9
-    },
-    {
-      "uri": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#@Tarkshodeh 🇧🇲",
-      "protocol": "ss",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "city": "Stretford",
-      "ping_ms": 8.0
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.36:8080#@V2ray_Alpha🌡️ 3",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 8.1
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#YFZ 53 @Outline_Vpn",
-      "protocol": "ss",
-      "country": "The Netherlands",
-      "country_code": "NL",
-      "city": "Amsterdam",
-      "ping_ms": 8.2
+      "uri": "hysteria2://vz86jgszv4zszchv@giftcard.gateway-stream.com:52062?security=tls&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u&insecure=0&sni=giftcard.gateway-stream.com#Telegram 🆔@cnetvpn 🇸🇪",
+      "protocol": "hysteria2",
+      "country": "Germany",
+      "country_code": "DE",
+      "city": "Frankfurt am Main",
+      "ping_ms": 6.6
     }
   ]
 }
