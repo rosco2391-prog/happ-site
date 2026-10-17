@@ -1,6 +1,0 @@
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@platform109.golnamakcert.top:80?sni=platform109.halalkhor.info&type=ws&host=platform109.halalkhor.info&path=/platform109#🇧🇷 Join+Telegram:@Farah_VPN 🇧🇷
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@platform103.golnamakcert.top:80?sni=platform103.halalkhor.info&type=ws&host=platform103.halalkhor.info&path=/platform103#[🏁]t.me/v2ray_configs_pools
-vless://e057056cc05afe044bcc27218de976ae@69.46.46.71:443?path=/ws/e057056cc05afe044bcc27218de976ae&security=tls&alpn=http/1.1&encryption=none&host=app-ec2116-a56b8b-production.up.railway.app&fp=chrome&type=ws&sni=app-ec2116-a56b8b-production.up.railway.app#All Operators @MaSTeRSeRVeR1
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@platform106.golnamakcert.top:80?type=ws&host=platform106.halalkhor.info&path=/platform106#[🏁]t.me/v2ray_configs_pools
-vless://e0454af2-6fe9-4983-a55d-05e1da202602@199.232.78.159:443?path=/&security=tls&encryption=none&insecure=0&host=lsjaoijji.global.ssl.fastly.neT&type=ws&allowInsecure=0&sni=ssl.fastly.com#@leviconfigs🪐-2
-vless://e0ff8a9b-dad3-4671-baf4-c8d466d1eb48@185.143.233.130:2052?path=/eyurri?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=&encryption=none&host=afra4.nimbaha9.ir&type=ws#[ 🇮🇷 ] | @Cfox_SerVer

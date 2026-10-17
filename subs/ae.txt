@@ -1,2 +1,0 @@
-vless://408c51e8-9246-483d-ba73-34ab4e202eb9@147.45.217.140:21731?security=reality&encryption=none&pbk=QeLV1NQeTG3e1DRFSNnK_f9Ca5Gf9smexICxtr27WUA&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=metrika.yandex.ru&sid=0446eb17#Config | 61 / 392
-vless://94b0cde3-a305-4d89-a192-575339220c7f@104.24.91.178:80?encryption=none&security=none&type=ws&host=flat-rain-e26e-ppal03.cigoyob991.workers.dev&path=/?ed=2560#🔴⚪️🔵Ch: @pPal03🔴⚪️🔵جوین بدید عزیزان🔴⚪️🔵

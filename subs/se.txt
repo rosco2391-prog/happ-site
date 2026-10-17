@@ -1,2 +1,0 @@
-vless://7q4eiwcseu@7q4eiwcseu-193708596-direct.rahbarii.com:443?security=tls&alpn=h2&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=7q4eiwcseu-193708596-direct.rahbarii.com#@v2ray313 کانالمون 🙀
-vless://80de563a-cac8-40ea-8cb0-4cb082dd92f9@5.178.109.174:14430?path=/vless&security=&encryption=none&host=5.178.109.174&type=ws&sni=5.178.109.174#@Napsternetvirani
