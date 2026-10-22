@@ -1,12 +1,12 @@
 {
-  "updated": "22.10.2026 12:04",
-  "total": 226,
-  "countries_total": 27,
+  "updated": "22.10.2026 18:05",
+  "total": 143,
+  "countries_total": 18,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 226,
-    "countries_count": 27,
-    "avg_ping": 13.1
+    "count": 143,
+    "countries_count": 18,
+    "avg_ping": 12.1
   },
   "lists": [
     {
@@ -14,14 +14,14 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 13,
-      "avg_ping": 9.3,
-      "min_ping": 3.2,
-      "max_ping": 11.7,
+      "countries_count": 9,
+      "avg_ping": 5.5,
+      "min_ping": 2.2,
+      "max_ping": 12.6,
       "top_countries": [
-        "The Netherlands (13)",
-        "United States (12)",
-        "France (6)"
+        "United States (21)",
+        "Japan (8)",
+        "Singapore (7)"
       ]
     },
     {
@@ -29,44 +29,29 @@
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
       "count": 60,
-      "countries_count": 15,
-      "avg_ping": 13.0,
-      "min_ping": 11.8,
-      "max_ping": 13.8,
+      "countries_count": 13,
+      "avg_ping": 16.2,
+      "min_ping": 13.3,
+      "max_ping": 17.4,
       "top_countries": [
-        "The Netherlands (18)",
-        "United States (7)",
-        "Serbia (6)"
+        "The Netherlands (30)",
+        "United States (8)",
+        "Germany (5)"
       ]
     },
     {
       "id": "list-3",
       "title": "Список 3",
       "sub_url": "subs/list-3.txt",
-      "count": 60,
-      "countries_count": 16,
-      "avg_ping": 14.6,
-      "min_ping": 13.8,
-      "max_ping": 15.3,
+      "count": 23,
+      "countries_count": 11,
+      "avg_ping": 18.8,
+      "min_ping": 17.4,
+      "max_ping": 26.1,
       "top_countries": [
-        "The Netherlands (17)",
-        "United States (8)",
-        "Germany (7)"
-      ]
-    },
-    {
-      "id": "list-4",
-      "title": "Список 4",
-      "sub_url": "subs/list-4.txt",
-      "count": 46,
-      "countries_count": 14,
-      "avg_ping": 16.5,
-      "min_ping": 15.3,
-      "max_ping": 17.9,
-      "top_countries": [
-        "Germany (11)",
-        "The Netherlands (8)",
-        "United States (6)"
+        "United States (7)",
+        "The Netherlands (6)",
+        "Japan (2)"
       ]
     }
   ]
