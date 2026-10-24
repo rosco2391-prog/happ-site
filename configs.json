@@ -1,12 +1,12 @@
 {
-  "updated": "24.10.2026 06:05",
-  "total": 522,
-  "countries_total": 37,
+  "updated": "24.10.2026 12:05",
+  "total": 219,
+  "countries_total": 24,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 522,
-    "countries_count": 37,
-    "avg_ping": 11.4
+    "count": 219,
+    "countries_count": 24,
+    "avg_ping": 11.2
   },
   "lists": [
     {
@@ -14,14 +14,14 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 13,
-      "avg_ping": 2.8,
-      "min_ping": 2.2,
-      "max_ping": 3.2,
+      "countries_count": 17,
+      "avg_ping": 3.2,
+      "min_ping": 2.4,
+      "max_ping": 4.2,
       "top_countries": [
-        "Finland (11)",
-        "Germany (10)",
-        "United States (10)"
+        "United States (11)",
+        "Germany (9)",
+        "Russia (9)"
       ]
     },
     {
@@ -29,14 +29,14 @@
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
       "count": 60,
-      "countries_count": 15,
-      "avg_ping": 3.6,
-      "min_ping": 3.2,
-      "max_ping": 4.3,
+      "countries_count": 14,
+      "avg_ping": 9.4,
+      "min_ping": 4.2,
+      "max_ping": 15.5,
       "top_countries": [
-        "Japan (28)",
-        "Finland (6)",
-        "The Netherlands (5)"
+        "United States (20)",
+        "Japan (11)",
+        "Germany (8)"
       ]
     },
     {
@@ -45,103 +45,28 @@
       "sub_url": "subs/list-3.txt",
       "count": 60,
       "countries_count": 12,
-      "avg_ping": 8.6,
-      "min_ping": 4.4,
-      "max_ping": 11.4,
+      "avg_ping": 16.4,
+      "min_ping": 15.5,
+      "max_ping": 17.2,
       "top_countries": [
-        "The Netherlands (18)",
-        "Japan (13)",
-        "United States (11)"
+        "The Netherlands (26)",
+        "United States (13)",
+        "Japan (4)"
       ]
     },
     {
       "id": "list-4",
       "title": "Список 4",
       "sub_url": "subs/list-4.txt",
-      "count": 60,
-      "countries_count": 16,
-      "avg_ping": 12.5,
-      "min_ping": 11.5,
-      "max_ping": 13.3,
+      "count": 39,
+      "countries_count": 14,
+      "avg_ping": 18.1,
+      "min_ping": 17.2,
+      "max_ping": 20.4,
       "top_countries": [
-        "The Netherlands (24)",
-        "United States (11)",
-        "Germany (4)"
-      ]
-    },
-    {
-      "id": "list-5",
-      "title": "Список 5",
-      "sub_url": "subs/list-5.txt",
-      "count": 60,
-      "countries_count": 18,
-      "avg_ping": 13.8,
-      "min_ping": 13.4,
-      "max_ping": 14.2,
-      "top_countries": [
-        "United States (15)",
-        "The Netherlands (9)",
-        "Japan (8)"
-      ]
-    },
-    {
-      "id": "list-6",
-      "title": "Список 6",
-      "sub_url": "subs/list-6.txt",
-      "count": 60,
-      "countries_count": 16,
-      "avg_ping": 14.6,
-      "min_ping": 14.2,
-      "max_ping": 15.0,
-      "top_countries": [
-        "Germany (9)",
-        "United States (9)",
-        "The Netherlands (8)"
-      ]
-    },
-    {
-      "id": "list-7",
-      "title": "Список 7",
-      "sub_url": "subs/list-7.txt",
-      "count": 60,
-      "countries_count": 19,
-      "avg_ping": 15.4,
-      "min_ping": 15.0,
-      "max_ping": 15.7,
-      "top_countries": [
-        "United States (13)",
         "The Netherlands (10)",
-        "Japan (9)"
-      ]
-    },
-    {
-      "id": "list-8",
-      "title": "Список 8",
-      "sub_url": "subs/list-8.txt",
-      "count": 60,
-      "countries_count": 16,
-      "avg_ping": 16.0,
-      "min_ping": 15.7,
-      "max_ping": 16.5,
-      "top_countries": [
-        "United States (20)",
-        "Japan (15)",
-        "The Netherlands (7)"
-      ]
-    },
-    {
-      "id": "list-9",
-      "title": "Список 9",
-      "sub_url": "subs/list-9.txt",
-      "count": 42,
-      "countries_count": 15,
-      "avg_ping": 17.1,
-      "min_ping": 16.5,
-      "max_ping": 24.3,
-      "top_countries": [
-        "The Netherlands (11)",
-        "United States (8)",
-        "Germany (6)"
+        "Germany (7)",
+        "United States (6)"
       ]
     }
   ]
