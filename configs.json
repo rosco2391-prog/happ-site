@@ -1,12 +1,12 @@
 {
-  "updated": "29.10.2026 18:04",
-  "total": 90,
-  "countries_total": 16,
+  "updated": "30.10.2026 00:05",
+  "total": 266,
+  "countries_total": 32,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 90,
-    "countries_count": 16,
-    "avg_ping": 13.5
+    "count": 266,
+    "countries_count": 32,
+    "avg_ping": 11.4
   },
   "lists": [
     {
@@ -14,29 +14,74 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 12,
-      "avg_ping": 11.4,
-      "min_ping": 2.4,
-      "max_ping": 16.7,
+      "countries_count": 13,
+      "avg_ping": 5.6,
+      "min_ping": 1.8,
+      "max_ping": 9.0,
       "top_countries": [
-        "The Netherlands (20)",
-        "Germany (12)",
-        "United States (11)"
+        "United States (24)",
+        "The Netherlands (10)",
+        "France (5)"
       ]
     },
     {
       "id": "list-2",
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
-      "count": 30,
-      "countries_count": 8,
-      "avg_ping": 17.7,
-      "min_ping": 16.7,
-      "max_ping": 21.1,
+      "count": 60,
+      "countries_count": 17,
+      "avg_ping": 10.3,
+      "min_ping": 9.0,
+      "max_ping": 11.8,
+      "top_countries": [
+        "The Netherlands (29)",
+        "United States (5)",
+        "Mexico (5)"
+      ]
+    },
+    {
+      "id": "list-3",
+      "title": "Список 3",
+      "sub_url": "subs/list-3.txt",
+      "count": 60,
+      "countries_count": 14,
+      "avg_ping": 12.6,
+      "min_ping": 11.8,
+      "max_ping": 13.5,
+      "top_countries": [
+        "The Netherlands (25)",
+        "South Korea (6)",
+        "Serbia (5)"
+      ]
+    },
+    {
+      "id": "list-4",
+      "title": "Список 4",
+      "sub_url": "subs/list-4.txt",
+      "count": 60,
+      "countries_count": 17,
+      "avg_ping": 14.6,
+      "min_ping": 13.6,
+      "max_ping": 15.9,
       "top_countries": [
         "The Netherlands (13)",
-        "United States (9)",
-        "Canada (2)"
+        "United States (12)",
+        "United Kingdom (7)"
+      ]
+    },
+    {
+      "id": "list-5",
+      "title": "Список 5",
+      "sub_url": "subs/list-5.txt",
+      "count": 26,
+      "countries_count": 8,
+      "avg_ping": 16.7,
+      "min_ping": 15.9,
+      "max_ping": 22.0,
+      "top_countries": [
+        "The Netherlands (7)",
+        "France (6)",
+        "United States (5)"
       ]
     }
   ]
