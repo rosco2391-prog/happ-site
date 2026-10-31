@@ -1,12 +1,12 @@
 {
-  "updated": "31.10.2026 06:07",
-  "total": 236,
-  "countries_total": 34,
+  "updated": "31.10.2026 12:05",
+  "total": 100,
+  "countries_total": 19,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 236,
-    "countries_count": 34,
-    "avg_ping": 11.6
+    "count": 100,
+    "countries_count": 19,
+    "avg_ping": 13.6
   },
   "lists": [
     {
@@ -14,59 +14,29 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 20,
-      "avg_ping": 5.0,
+      "countries_count": 14,
+      "avg_ping": 10.5,
       "min_ping": 1.9,
-      "max_ping": 8.4,
+      "max_ping": 17.0,
       "top_countries": [
-        "The Netherlands (15)",
-        "Germany (5)",
-        "Japan (5)"
+        "United States (21)",
+        "The Netherlands (10)",
+        "Germany (7)"
       ]
     },
     {
       "id": "list-2",
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
-      "count": 60,
-      "countries_count": 18,
-      "avg_ping": 11.1,
-      "min_ping": 8.6,
-      "max_ping": 13.3,
+      "count": 40,
+      "countries_count": 13,
+      "avg_ping": 18.1,
+      "min_ping": 17.1,
+      "max_ping": 20.9,
       "top_countries": [
-        "United States (17)",
-        "Sweden (6)",
-        "Finland (5)"
-      ]
-    },
-    {
-      "id": "list-3",
-      "title": "Список 3",
-      "sub_url": "subs/list-3.txt",
-      "count": 60,
-      "countries_count": 21,
-      "avg_ping": 14.2,
-      "min_ping": 13.3,
-      "max_ping": 15.3,
-      "top_countries": [
+        "The Netherlands (10)",
         "Germany (9)",
-        "United States (7)",
-        "Sweden (7)"
-      ]
-    },
-    {
-      "id": "list-4",
-      "title": "Список 4",
-      "sub_url": "subs/list-4.txt",
-      "count": 56,
-      "countries_count": 22,
-      "avg_ping": 16.3,
-      "min_ping": 15.3,
-      "max_ping": 17.6,
-      "top_countries": [
-        "Japan (11)",
-        "United States (7)",
-        "The Netherlands (5)"
+        "United States (7)"
       ]
     }
   ]
