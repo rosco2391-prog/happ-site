@@ -1,12 +1,12 @@
 {
-  "updated": "04.11.2026 18:06",
-  "total": 171,
-  "countries_total": 26,
+  "updated": "05.11.2026 00:04",
+  "total": 190,
+  "countries_total": 29,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 171,
-    "countries_count": 26,
-    "avg_ping": 13.4
+    "count": 190,
+    "countries_count": 29,
+    "avg_ping": 10.5
   },
   "lists": [
     {
@@ -14,14 +14,14 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 17,
-      "avg_ping": 8.1,
-      "min_ping": 2.0,
-      "max_ping": 12.3,
+      "countries_count": 16,
+      "avg_ping": 5.3,
+      "min_ping": 0.9,
+      "max_ping": 9.7,
       "top_countries": [
-        "United States (21)",
-        "Germany (9)",
-        "Singapore (5)"
+        "Germany (15)",
+        "The Netherlands (7)",
+        "Netherlands (7)"
       ]
     },
     {
@@ -29,29 +29,44 @@
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
       "count": 60,
-      "countries_count": 15,
-      "avg_ping": 14.5,
-      "min_ping": 12.5,
-      "max_ping": 16.1,
+      "countries_count": 20,
+      "avg_ping": 11.0,
+      "min_ping": 9.7,
+      "max_ping": 11.9,
       "top_countries": [
-        "United States (18)",
-        "The Netherlands (18)",
-        "Hong Kong (6)"
+        "United States (10)",
+        "Germany (10)",
+        "The Netherlands (6)"
       ]
     },
     {
       "id": "list-3",
       "title": "Список 3",
       "sub_url": "subs/list-3.txt",
-      "count": 51,
-      "countries_count": 15,
-      "avg_ping": 18.5,
-      "min_ping": 16.1,
-      "max_ping": 35.2,
+      "count": 60,
+      "countries_count": 17,
+      "avg_ping": 13.3,
+      "min_ping": 12.0,
+      "max_ping": 16.4,
       "top_countries": [
-        "The Netherlands (14)",
-        "United States (10)",
-        "United Kingdom (4)"
+        "United States (12)",
+        "Germany (9)",
+        "Bulgaria (6)"
+      ]
+    },
+    {
+      "id": "list-4",
+      "title": "Список 4",
+      "sub_url": "subs/list-4.txt",
+      "count": 10,
+      "countries_count": 6,
+      "avg_ping": 21.3,
+      "min_ping": 16.7,
+      "max_ping": 38.4,
+      "top_countries": [
+        "United States (4)",
+        "Germany (2)",
+        "Hong Kong (1)"
       ]
     }
   ]
