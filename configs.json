@@ -1,12 +1,12 @@
 {
-  "updated": "07.11.2026 12:05",
-  "total": 192,
-  "countries_total": 27,
+  "updated": "07.11.2026 18:05",
+  "total": 169,
+  "countries_total": 28,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 192,
-    "countries_count": 27,
-    "avg_ping": 12.3
+    "count": 169,
+    "countries_count": 28,
+    "avg_ping": 12.0
   },
   "lists": [
     {
@@ -14,14 +14,14 @@
       "title": "Список 1",
       "sub_url": "subs/list-1.txt",
       "count": 60,
-      "countries_count": 17,
-      "avg_ping": 7.6,
-      "min_ping": 1.7,
-      "max_ping": 12.1,
+      "countries_count": 14,
+      "avg_ping": 6.2,
+      "min_ping": 2.6,
+      "max_ping": 8.9,
       "top_countries": [
-        "The Netherlands (11)",
-        "United Kingdom (10)",
-        "United States (9)"
+        "United States (24)",
+        "Japan (8)",
+        "Germany (7)"
       ]
     },
     {
@@ -29,44 +29,29 @@
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
       "count": 60,
-      "countries_count": 19,
-      "avg_ping": 13.0,
-      "min_ping": 12.2,
-      "max_ping": 13.8,
+      "countries_count": 18,
+      "avg_ping": 13.3,
+      "min_ping": 8.9,
+      "max_ping": 15.9,
       "top_countries": [
-        "The Netherlands (13)",
-        "Germany (6)",
-        "United States (6)"
+        "The Netherlands (21)",
+        "United States (10)",
+        "France (3)"
       ]
     },
     {
       "id": "list-3",
       "title": "Список 3",
       "sub_url": "subs/list-3.txt",
-      "count": 60,
+      "count": 49,
       "countries_count": 18,
-      "avg_ping": 15.1,
-      "min_ping": 13.8,
-      "max_ping": 17.4,
+      "avg_ping": 17.6,
+      "min_ping": 16.1,
+      "max_ping": 24.1,
       "top_countries": [
-        "The Netherlands (21)",
+        "The Netherlands (15)",
         "United States (5)",
-        "United Kingdom (5)"
-      ]
-    },
-    {
-      "id": "list-4",
-      "title": "Список 4",
-      "sub_url": "subs/list-4.txt",
-      "count": 12,
-      "countries_count": 10,
-      "avg_ping": 18.2,
-      "min_ping": 17.4,
-      "max_ping": 19.1,
-      "top_countries": [
-        "Estonia (2)",
-        "United Kingdom (2)",
-        "United States (1)"
+        "Kazakhstan (5)"
       ]
     }
   ]
