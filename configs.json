@@ -1,12 +1,12 @@
 {
-  "updated": "10.11.2026 06:05",
-  "total": 521,
-  "countries_total": 40,
+  "updated": "10.11.2026 12:04",
+  "total": 141,
+  "countries_total": 23,
   "all": {
     "sub_url": "subs/all.txt",
-    "count": 521,
-    "countries_count": 40,
-    "avg_ping": 10.6
+    "count": 141,
+    "countries_count": 23,
+    "avg_ping": 12.6
   },
   "lists": [
     {
@@ -15,13 +15,13 @@
       "sub_url": "subs/list-1.txt",
       "count": 60,
       "countries_count": 15,
-      "avg_ping": 5.0,
-      "min_ping": 1.6,
-      "max_ping": 6.0,
+      "avg_ping": 7.9,
+      "min_ping": 2.1,
+      "max_ping": 11.7,
       "top_countries": [
-        "United States (21)",
-        "The Netherlands (9)",
-        "Germany (7)"
+        "United States (28)",
+        "United Kingdom (7)",
+        "Germany (6)"
       ]
     },
     {
@@ -29,119 +29,29 @@
       "title": "Список 2",
       "sub_url": "subs/list-2.txt",
       "count": 60,
-      "countries_count": 17,
-      "avg_ping": 6.4,
-      "min_ping": 6.0,
-      "max_ping": 7.0,
+      "countries_count": 16,
+      "avg_ping": 15.3,
+      "min_ping": 11.8,
+      "max_ping": 17.2,
       "top_countries": [
-        "United States (20)",
-        "Germany (8)",
-        "United Kingdom (6)"
+        "United States (16)",
+        "The Netherlands (10)",
+        "Germany (6)"
       ]
     },
     {
       "id": "list-3",
       "title": "Список 3",
       "sub_url": "subs/list-3.txt",
-      "count": 60,
-      "countries_count": 13,
-      "avg_ping": 7.7,
-      "min_ping": 7.0,
-      "max_ping": 8.6,
+      "count": 21,
+      "countries_count": 10,
+      "avg_ping": 18.6,
+      "min_ping": 17.3,
+      "max_ping": 31.4,
       "top_countries": [
-        "United States (16)",
-        "The Netherlands (10)",
-        "Canada (6)"
-      ]
-    },
-    {
-      "id": "list-4",
-      "title": "Список 4",
-      "sub_url": "subs/list-4.txt",
-      "count": 60,
-      "countries_count": 18,
-      "avg_ping": 9.8,
-      "min_ping": 8.6,
-      "max_ping": 10.7,
-      "top_countries": [
-        "The Netherlands (24)",
-        "United States (12)",
-        "Germany (5)"
-      ]
-    },
-    {
-      "id": "list-5",
-      "title": "Список 5",
-      "sub_url": "subs/list-5.txt",
-      "count": 60,
-      "countries_count": 15,
-      "avg_ping": 11.3,
-      "min_ping": 10.7,
-      "max_ping": 11.8,
-      "top_countries": [
-        "United States (15)",
-        "The Netherlands (11)",
-        "Japan (7)"
-      ]
-    },
-    {
-      "id": "list-6",
-      "title": "Список 6",
-      "sub_url": "subs/list-6.txt",
-      "count": 60,
-      "countries_count": 22,
-      "avg_ping": 12.3,
-      "min_ping": 11.8,
-      "max_ping": 12.8,
-      "top_countries": [
-        "The Netherlands (10)",
-        "Japan (9)",
-        "United States (7)"
-      ]
-    },
-    {
-      "id": "list-7",
-      "title": "Список 7",
-      "sub_url": "subs/list-7.txt",
-      "count": 60,
-      "countries_count": 20,
-      "avg_ping": 13.4,
-      "min_ping": 12.8,
-      "max_ping": 14.1,
-      "top_countries": [
-        "United States (9)",
-        "The Netherlands (9)",
-        "Germany (8)"
-      ]
-    },
-    {
-      "id": "list-8",
-      "title": "Список 8",
-      "sub_url": "subs/list-8.txt",
-      "count": 60,
-      "countries_count": 20,
-      "avg_ping": 14.5,
-      "min_ping": 14.1,
-      "max_ping": 15.2,
-      "top_countries": [
-        "The Netherlands (12)",
-        "Japan (6)",
-        "United Kingdom (6)"
-      ]
-    },
-    {
-      "id": "list-9",
-      "title": "Список 9",
-      "sub_url": "subs/list-9.txt",
-      "count": 41,
-      "countries_count": 18,
-      "avg_ping": 16.2,
-      "min_ping": 15.2,
-      "max_ping": 21.1,
-      "top_countries": [
-        "Japan (6)",
         "The Netherlands (6)",
-        "Finland (5)"
+        "United States (4)",
+        "Germany (2)"
       ]
     }
   ]
